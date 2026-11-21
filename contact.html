@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send a question, suggestion or booking request to the Greenway Park Guide team.">
+  <title>Contact | Greenway Park Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Greenway <span>Park Guide</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Parks</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero" aria-labelledby="contact-title">
+      <img class="hero-bg" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=75" alt="Green meadow stretching out under a wide sky">
+      <div class="hero-content">
+        <h1 id="contact-title">Contact us</h1>
+        <p>Questions, ideas or a picnic shelter to book? Write to us and we will reply within three working days.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="section-inner contact-layout">
+        <div class="form-wrap">
+          <h2 id="form-title">Send a message</h2>
+          <form action="contact.html" method="get">
+            <div class="form-field">
+              <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Maria Santos" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="topic">What is this about?</label>
+              <select id="topic" name="topic">
+                <option value="question">General question</option>
+                <option value="booking">Picnic shelter booking</option>
+                <option value="event">Event idea</option>
+                <option value="report">Report a problem in a park</option>
+                <option value="volunteer">Volunteer sign-up</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" placeholder="Tell us which park and what you need."></textarea>
+              <span class="hint">Fields marked * are required.</span>
+            </div>
+
+            <button type="submit" class="btn">Send message</button>
+          </form>
+        </div>
+
+        <aside>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=75" alt="Rolling green hills under a blue sky" loading="lazy">
+            <figcaption>See you out there!</figcaption>
+          </figure>
+          <h2 style="margin-top:1.5rem">Visitor info</h2>
+          <p><strong>Park hours:</strong> 6 am to 9 pm, every day.</p>
+          <p><strong>Info kiosk:</strong> Lakeview Commons, weekends 9 am to 4 pm.</p>
+          <p><strong>Emergency:</strong> call your local emergency number.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Greenway Park Guide. A student project. Photos via Unsplash.</p>
+      <ul>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
